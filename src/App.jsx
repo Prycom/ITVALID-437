@@ -5,12 +5,12 @@ import Test from './components/Test'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const options = ['1', '2', '5']
   return (
     <div className="App">
       <h1>Hello world</h1>
       <Routes>
-        <Route path='/test' element={<Test />} />
+        <Route path='/test' element={<Test options={options} />} />
       </Routes>
     </div>
   )
