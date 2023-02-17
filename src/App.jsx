@@ -8,9 +8,8 @@ function App() {
   const options = ['1', '2', '5']
   return (
     <div className="App">
-      <h1>Hello world</h1>
       <Routes>
-        <Route path='/test' element={<Test options={options} />} />
+        <Route path='/test' element={<Test />} />
       </Routes>
     </div>
   )

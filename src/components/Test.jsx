@@ -2,7 +2,6 @@ import React from 'react'
 import { useState } from 'react'
 import './Test.css'
 
-//TODO Скрыть жлементы Dropdown и сделать выбор
 const Dropdown = ({ label, value, options, onChange }) => {
     return (
         <label>
@@ -16,14 +15,15 @@ const Dropdown = ({ label, value, options, onChange }) => {
     );
 };
 
+//TODO Make working list of tables
 export default function Test(props) {
     const options = [
-        { label: 'Fruit', value: 'fruit' },
-        { label: 'Vegetable', value: 'vegetable' },
-        { label: 'Meat', value: 'meat' },
+        { label: 'block', value: 'block' },
+        { label: 'mode', value: 'mode' },
+        { label: 'data_quality', value: 'data_quality' },
       ];
 
-    const [value, setValue] = useState('fruit');
+    const [value, setValue] = useState('none');
     
     const handleChange = (event) => {
         setValue(event.target.value);
@@ -31,8 +31,8 @@ export default function Test(props) {
 
     return ( 
         <div>
-            <Dropdown label="What do we eat?" options={options} value={value} onChange={handleChange} />
-            <p>We eat {value}!</p>
+            <Dropdown label="Выберите таблицу" options={options} value={value} onChange={handleChange} />
+            <p>Выбрано: {value}</p>
         </div> 
     );
 }
