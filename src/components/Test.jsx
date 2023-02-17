@@ -4,8 +4,8 @@ import './Test.css'
 
 const Dropdown = ({ label, value, options, onChange }) => {
     return (
-        <label>
-            {label}
+        <label className='dropdown-select'>
+            <span>{label}</span>    
             <select value={value} onChange={onChange}>
                 {options.map((option) => (
                 <option value={option.value}>{option.label}</option>
@@ -30,7 +30,7 @@ export default function Test(props) {
     };
 
     return ( 
-        <div>
+        <div className='dropdown'>
             <Dropdown label="Выберите таблицу" options={options} value={value} onChange={handleChange} />
             <p>Выбрано: {value}</p>
         </div> 
