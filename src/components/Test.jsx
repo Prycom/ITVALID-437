@@ -15,7 +15,24 @@ const Dropdown = ({ label, value, options, onChange }) => {
     );
 };
 
-//TODO Make working list of tables
+const test_schema = {
+    columns : [
+        {
+            name: 'id',
+            type: 'label',
+        },
+        {
+            name: 'date',
+            type: 'label'
+        },
+        {
+            name: 'key',
+            type: 'input'
+        }
+    ]
+}
+
+
 export default function Test(props) {
     const options = [
         { label: 'block', value: 'block' },
