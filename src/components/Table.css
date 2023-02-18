@@ -1,0 +1,16 @@
+.ulTableHeader {
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    justify-content: space-around;
+    background-color: #01987a;
+    color: white;
+    border-radius: 0.2rem;
+    
+}
+
+.ulTableHeader > li {
+    width: 100%;
+    height: 3rem;
+    align-content: center;
+}
