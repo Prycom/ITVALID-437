@@ -5,7 +5,7 @@ import './Test.css'
 const Dropdown = ({ label, value, options, onChange }) => {
     return (
         <label className='dropdown-select'>
-            <span>{label}</span>    
+            <span >{label}</span>    
             <select value={value} onChange={onChange}>
                 {options.map((option) => (
                 <option value={option.value}>{option.label}</option>
@@ -31,6 +31,7 @@ const test_schema = {
         }
     ]
 }
+
 
 
 export default function Test(props) {
